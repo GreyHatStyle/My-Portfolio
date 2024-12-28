@@ -1,0 +1,100 @@
+.skills-heading{
+    margin: 3em 2em 1em 2em;
+}
+
+.skills-heading{
+    text-align: center;
+
+    p{
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    span{
+        font-family: 'Poppins', sans-serif;
+        line-height: 1;
+        font-size: 50px;
+    }
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#skills .head{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0.6em;
+    background-color: var(--base-heading-clr);
+    /* border-radius: inherit; */
+    margin: 0 0.15em;
+    margin-top: 0.6em;
+}
+
+#skills .web, #skills .ml{
+    background-color: var(--base-clr);
+    margin: 0.5em 2em;
+    border-radius: 10px;
+    ul{
+        list-style: none;
+        margin-top: 0.5em;
+    }
+}
+
+
+#skills .web ul li, #skills .ml ul li{
+    padding: 0.3em;
+    text-align: center;
+}
+
+/* Animation */
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.darkmode #skills .web, .darkmode #skills .ml {
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    isolation: isolate;
+    background: transparent;
+}
+
+.darkmode #skills .web::before, 
+.darkmode #skills .ml::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    background-image: repeating-conic-gradient(from var(--angle), #006aff, #00ff88, #006aff);
+    animation: 3s spin linear infinite;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+    z-index: -2;
+}
+
+.darkmode #skills .web::after, .darkmode #skills .ml::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: var(--base-clr);
+    z-index: -1;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}

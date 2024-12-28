@@ -1,0 +1,182 @@
+#profile{
+    background-color: var(--base-clr);
+    padding: 2em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    
+    margin: 0 2em;
+    
+    border-radius: 27px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    
+    position: relative;
+    z-index: 1;
+    
+}
+
+#profile .prof-image{
+    display: flex;
+    justify-content: center;
+}
+
+#profile .prof-image img{
+    border-radius: 140px;
+    width: 60%;
+    max-width: 300px;
+}
+
+#profile p{
+    font-size: 18px;
+}
+
+#profile .name{
+    font-family: "Style Script";
+    font-size: 35px;
+}
+
+#profile .who{
+    font-size: 10px;
+}
+
+#profile .buttons{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#profile .buttons button{
+    background-color: var(--base-varient-clr);
+    border-radius: 31.5px;
+    padding: 0.5em 1em;
+    position: relative;
+    a{
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+#profile .buttons button:hover{
+    background-color: var(--hover-clr);
+    a{
+        font-weight: 500;
+    }
+}
+
+/* Now for darkmode */
+
+
+.darkmode #profile .buttons button::after{
+    content: '';
+    position: absolute;
+
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: inherit;
+
+    top: -2px;
+    left: -2px;
+
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+
+    z-index: -1;
+
+}
+
+.darkmode #profile .buttons button:hover{
+    z-index: 0;
+    cursor: pointer;
+    box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
+    a{
+        font-weight: 600;
+    }
+}
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.darkmode #profile::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    background-image: repeating-conic-gradient(from var(--angle), transparent 50%, #006aff );
+    animation: 3s spin linear infinite;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+    z-index: -2;
+}
+
+/*  #006aff, #00ff88 */
+.darkmode #profile::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: var(--base-clr);
+    z-index: -2;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+
+
+/* Media query */
+
+@media screen and (min-width: 730px){
+    #profile{
+        padding: 4em 4em;
+        flex-direction: row-reverse;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile .name{
+        font-size: 4em;
+    }
+
+    #profile p{
+        font-size: 2em;
+    }
+
+    #profile .who{
+        font-size: small;
+    }
+    
+    #profile .buttons{
+        margin-top: 2em;
+        
+        button{
+            padding: 11px 39px;
+
+            a{
+                font-size: medium;
+            }
+        }
+    }
+}   
+
+@media screen and (min-width: 1024px){
+    #profile{
+        
+        margin: 4em;
+    }
+}

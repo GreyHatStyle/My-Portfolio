@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+
+.lightmode{
+    --base-clr: #C2FFC7;
+    --base-varient-clr: #9EDF9C;
+    --base-heading-clr: #83CA81;
+    --hover-clr: #62825D;
+    --final-clr: #526E48;
+    --text-clr: #000000;
+}
+
+.darkmode{
+    --base-clr: #252832;
+    --base-varient-clr: #11121a;
+    --base-heading-clr: #40475e;
+    --hover-clr: #4a4c52;
+    --final-clr: #9290C3;
+    --text-clr: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-clr);
+    font-family: "Baloo Paaji 2",  sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--base-clr);
+}
+
+#base{
+    background-color: var(--base-varient-clr);
+    height: 100vh;
+}
+
+svg{
+    fill: var(--text-clr);
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px){
+    #base{
+        margin: 0em 15em;
+    }
+}
