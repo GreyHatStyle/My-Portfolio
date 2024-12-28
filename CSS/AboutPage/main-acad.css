@@ -1,0 +1,106 @@
+#first-block, #acad{
+    background-color: var(--base-clr);
+    margin: min(6vw, 2em);
+    border-radius: 10px;
+}
+
+#first-block{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    
+}
+
+#acad{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+#acad .head{
+    background-color: var(--hover-clr);
+    margin: 1em 0;
+    padding-left: 1em;
+}
+
+#acad .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#acad .details .college,
+#acad .details .twelth, 
+#acad .details .tenth{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1.5em 0;
+    width: 80%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 200ms ease-in;
+    p:first-child{
+        font-size: 22px;
+    }
+
+    p::before{
+        content: attr(data-what);
+        font-weight: 600;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+#acad .details .title{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1.5em 0;
+    width: 80%;
+    display: none;
+
+    font-weight: 900;
+    font-size: 23px;
+
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 630px){
+    #acad, #first-block{
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    #base{
+        /* To go to its best width but not more than max-width */
+        width: 100%; 
+    }
+    #acad, #first-block{
+        font-size: 18px;
+    }
+
+    #acad .details .title{
+        display: flex;
+    }
+
+    #acad .details .college,
+    #acad .details .twelth, 
+    #acad .details .tenth,
+    #acad .details .title{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+        p::before{
+            content: '';
+        }
+    }
+}
+
+

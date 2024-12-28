@@ -1,0 +1,22 @@
+#pub{
+    background-color: var(--base-clr);
+    margin: min(6vw, 2em);
+    border-radius: 10px;
+    padding: 1em 0;
+}
+
+#pub .head{
+    background-color: var(--hover-clr);
+    padding-left: 2em;
+}
+
+#pub .publications{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+
+    h3{
+        font-size: 23px;
+    }
+}

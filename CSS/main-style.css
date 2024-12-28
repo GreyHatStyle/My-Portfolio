@@ -9,6 +9,7 @@
     --final-clr: #526E48;
     --text-clr: #000000;
     --text-op-clr: white;
+    --highlight-clr: #526E48;
 }
 
 .darkmode{
@@ -19,6 +20,7 @@
     --final-clr: #9290C3;
     --text-clr: #ffffff;
     --text-op-clr: black;
+    --highlight-clr: #5e63ff;
 }
 
 *{

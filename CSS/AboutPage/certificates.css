@@ -1,0 +1,59 @@
+#cer{
+    background-color: var(--base-clr);
+    margin: min(6vw, 2em);
+    border-radius: 10px;
+    padding: 1em 0;
+}
+
+#cer .head{
+    background-color: var(--hover-clr);
+    padding-left: 2em;;
+}
+
+#cer .certificates{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;;
+}
+
+.box{
+    padding: 1em;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 200ms ease-in;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+.box button{
+    background-color: var(--base-varient-clr);
+    padding: 0.5em 2em;
+    border-radius: 50px;
+    a{
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    &:hover{
+        background-color: var(--hover-clr);
+    }
+}
+
+
+
+/* Media queries */
+
+@media screen and (min-width: 630px){
+    #cer .head{
+        font-size: 20px;
+    }
+
+    #cer .certificates{
+        font-size: 18px;
+    }
+    .box button a{
+        font-size: 20px;
+    }
+}

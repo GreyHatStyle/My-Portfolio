@@ -103,6 +103,10 @@
         display: block;
         padding:  0 1em;
         align-self: center;
+        transition: 200ms ease-in;
+        &:hover{
+            transform: scale(1.2);
+        }
         a{
             font-weight: 800;
             font-size: 2em;
