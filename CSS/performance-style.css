@@ -19,6 +19,10 @@
     gap: 5px;
     justify-self: flex-start;
     padding-left: 1em;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 

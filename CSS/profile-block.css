@@ -1,4 +1,5 @@
 #profile{
+    scroll-margin-top: 200px;
     background-color: var(--base-clr);
     padding: 2em;
     
@@ -20,9 +21,15 @@
 #profile .prof-image{
     display: flex;
     justify-content: center;
+    transition: transform 0.5s linear; /* Add transition for smooth effect */
+    transform-origin: center;
 }
 
-#profile .prof-image img{
+#profile .prof-image:hover {
+    transform: rotateY(180deg); /* Rotate on hover */
+}
+
+#profile .prof-image img {
     border-radius: 140px;
     width: 60%;
     max-width: 300px;
