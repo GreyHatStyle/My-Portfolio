@@ -55,6 +55,7 @@ button:hover{
 
 @media screen and (min-width: 1024px){
     #base{
-        margin: 0em 15em;
+        max-width: 1035px;
+        justify-self: center;
     }
 }

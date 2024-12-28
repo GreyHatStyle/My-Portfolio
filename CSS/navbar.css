@@ -1,5 +1,9 @@
 #navbar{
-    display: flex;
+    display: flex;;
+}
+
+#navbar .logo{
+    display: none;
 }
 
 #navbar .menu-open, #navbar .mode-set{
@@ -81,6 +85,49 @@
 
 
 /* Media query */
-@media screen and (min-width: 1024px){
-    
+@media screen and (min-width: 730px){
+
+    #navbar{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--base-varient-clr);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #navbar .logo{
+        display: block;
+        padding:  0 1em;
+        a{
+            font-weight: 800;
+            font-size: 2em;
+            text-decoration: none;
+        }
+    }
+    #navbar .close-menubar{
+        display: none;
+    }
+    #navbar .menu-open{
+        display: none;
+    }
+
+    #navbar #sidebar{
+        left: unset;
+        position: unset;
+        flex-direction: row;
+        height: unset;
+        background-color: var(--base-varient-clr);
+
+        ul{
+            display: flex;
+        }
+    }
+
+    #navbar #sidebar ul button{
+        padding: 1em 2em;
+        a{
+            font-size: 1.2em;
+        }
+    }
+
 }

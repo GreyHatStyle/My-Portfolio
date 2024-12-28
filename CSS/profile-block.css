@@ -147,6 +147,7 @@
 
         align-items: center;
         justify-content: center;
+        margin: 3em 2em;
     }
 
     #profile .name{
@@ -176,7 +177,7 @@
 
 @media screen and (min-width: 1024px){
     #profile{
-        
+        padding: 4em 4em;
         margin: 4em;
     }
 }
