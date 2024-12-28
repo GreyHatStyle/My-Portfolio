@@ -37,7 +37,6 @@ body{
 
 #base{
     background-color: var(--base-varient-clr);
-    height: 100vh;
 }
 
 svg{

@@ -39,3 +39,14 @@
 .performance article span {
     margin: 0;
 }
+
+/* Media query */
+
+@media screen and (min-width: 730px){
+    .performance .num{
+        font-size: 55px;
+    }
+    .performance article {
+        font-size: 18px;
+    }
+}

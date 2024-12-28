@@ -20,7 +20,6 @@
 #skills{
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -39,6 +38,7 @@
     background-color: var(--base-clr);
     margin: 0.5em 2em;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     ul{
         list-style: none;
         margin-top: 0.5em;
@@ -96,5 +96,18 @@
     }
     to{
         --angle: 360deg;
+    }
+}
+
+
+/* Media queries */
+@media screen and (min-width: 730px){
+    #skills{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #skills .web, #skills .ml{
+        flex: 1;
     }
 }
