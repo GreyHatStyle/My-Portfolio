@@ -61,7 +61,11 @@
     max-width: 95%;
     border-radius: 20px;
     object-fit: contain;
-    margin: 0 0 0 2em;
+    transition: 200ms ease-out;
+}
+
+#projects .image img:hover{
+    transform: scale(1.1);
 }
 
 
@@ -102,5 +106,9 @@
     #projects .buttons button{
         font-size: 18px;
         padding: 1em 3em;
+    }
+
+    #projects .image img{
+        margin: 0 0 0 2em;
     }
 }
