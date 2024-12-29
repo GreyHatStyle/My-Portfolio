@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="CSS/main-style.css">
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/socials-style.css">
-    <link rel="stylesheet" href="CSS/AboutPage/main-acad.css">
-    <link rel="stylesheet" href="CSS/AboutPage/certificates.css">
-    <link rel="stylesheet" href="CSS/AboutPage/pub.css">
+    <link rel="stylesheet" href="CSS/ProjectPage/main-proj.css">
     <title>Document</title>
 </head>
 <body class="lightmode">
@@ -44,103 +42,40 @@
             
         </nav>
 
-        
-        
-        <div id="first-block">
-            <h1>Manas Bisht</h1>
-            <p>Email id: manasbisht1142004@gmail.com</p>
-            <p>Mobile No.: (+91) 9098187152</p>
+        <div class="proj-heading">
+            <p>Get a Look Of My Recent</p>
+            <h1>Projects</h1>
         </div>
         
-        <div id="acad">
-            <div class="head"><h1>ACADEMIC DETAILS</h1></div>
-            <div class="details">
-                <div class="title">
-                    <p>YEAR</p>
-                    <p> DEGREE/EXAM</p>
-                    <p>INSTITUTE</p>
-                    <p>GPA/MARKS(%)</p>
-                </div>
-                <div class="college">
-                    <p data-what="YEAR: ">Aug 2022 - 2026</p>
-                    <p data-what="DEGREE/EXAM: "> B.Tech in Computer Science</p>
-                    <p data-what="INSTITUTE: " >Graphic Era Hill University Dehradun</p>
-                    <p data-what="CGPA/MARKS(%): ">8.13/10.0</p>
-                </div>
-    
-                <div class="twelth">
-                    <p data-what="YEAR: ">2022</p>
-                    <p data-what="DEGREE/EXAM: : "> 12th, C.B.S.E</p>
-                    <p data-what="INSTITUTE: ">Sagar public school</p>
-                    <p data-what="CGPA/MARKS(%): ">74.00 %</p>
-                </div>
-    
-                <div class="tenth">
-                    <p data-what="YEAR: ">2020</p>
-                    <p data-what="DEGREE/EXAM: " >10th, C.B.S.E</p>
-                    <p data-what="INSTITUTE: " >Sagar public school</p>
-                    <p data-what="CGPA/MARKS(%): " >85.00 %</p>
-                </div>
-
+        <div id="projects">
+            <div class="image">
+                <img src="Images/Projects/pf1.png" alt="Practical File Generator">
             </div>
-        </div>
-
-        <div id="cer">
-            <div class="head"><h1>CERTIFICATIONS</h1></div>
-            <div class="certificates">
-                <div class="box">
-                    <h3>Introduction To Machine Learning</h3>
-                    <p>NPTEL</p>
-                    <p>July-Sept 2024</p>
-                    <button><a href="https://drive.google.com/file/d/1urwKos2N9QrTQRNcZV99qq-8SVSZbBzf/view?usp=sharing">Verify</a></button>
-                </div>
+            <div class="content">
+                <div class="heading">01</div>
+                <h1>Practical File Generator</h1>
+                <p>This project is designed to minimize the process of making practical files by college students, by doing most of manual work automatically. It follows Graphic Era Hill University's Format of making Practical files.</p>
                 
-                <div class="box">
-                    <h3>Natural Language Processing With Python</h3>
-                    <p>UDEMY</p>
-                    <p>Issued Aug 2024</p>
-                    <button><a href="https://www.udemy.com/certificate/UC-13e78927-cdeb-4766-a1da-ec1cb5ddc93c/">Verify</a></button>
-                </div>
 
-                <div class="box">
-                    <h3>certificate of Fast Typing</h3>
-                    <p>RATATYPE</p>
-                    <p>Issued Oct 2022</p>
-                    <button><a href="https://www.ratatype.com/u5248149/certificate/en/">Verify</a></button>
+                <p class="lang">
+                    Python, PyQt6, python-docx
+                </p>
+
+                <div class="buttons">
+                    <button><a href="https://github.com/GreyHatStyle/Practical-File-Automator-GEHU/tree/main">Github</a></button>
                 </div>
             </div>
-        </div>
 
-        <div id="pub">
-            <div class="head"><h1>PUBLICATIONS</h1></div>
-            <div class="publications">
-                <div class="box">
-                    <h3>Analysis of Tree-based Ensemble Machine Learning Algorithms for Determining Covid-19 Survival Rate</h3>
-                    <p><b>Published in:</b> 2024 First International Conference on Technological Innovations and Advance Computing (TIACOMP)</p>
-                    <p> <b>Publisher:</b> IEEE</p>
-                    <p><b>Conference Date:</b> 29-30 June 2024</p>
-                    <button><a href="https://ieeexplore.ieee.org/abstract/document/10742689">IEEE XPLORE</a></button>
-                </div>
-                
-                <div class="box">
-                    <h3>Studying Dengue spread using Climatic conditions and Machine learning Algorithms</h3>
-                    <p><b>Published in:</b> 2024 First International Conference on Technological Innovations and Advance Computing (TIACOMP)</p>
-                    <p> <b>Publisher:</b> IEEE</p>
-                    <p><b>Conference Date:</b> 29-30 June 2024</p>
-                    <button><a href="https://ieeexplore.ieee.org/abstract/document/10742669" >IEEE XPLORE</a></button>
-                </div>
-
-                <div class="box">
-                    <h3>Analysis of Machine Learning Algorithms for Predicting Titanic Disaster Survival Rate</h3>
-                    <p><b>Published in:</b> 2024 4th International Conference on Sustainable Expert Systems (ICSES)</p>
-                    <p> <b>Publisher:</b> IEEE</p>
-                    <p><b>Conference Date:</b> 15-17 October 2024</p>
-                    <button><a href="https://ieeexplore.ieee.org/abstract/document/10763371" >IEEE XPLORE</a></button>
-                </div>
+            <div class="arrow">
+                <button class="left" onclick="prevProject()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                </button>
+    
+                <button class="right" onclick="nextProject()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                </button>
             </div>
         </div>
-        
-        
 
 
 
@@ -166,5 +101,6 @@
 
     <script src="JS/navbar-oc.js"></script>
     <script src="JS/main.js"></script>
+    <script src="JS/project-slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+.proj-heading{
+    line-height: 1;
+    text-align: center;
+    h1{
+        font-size: 46px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+#projects{
+    background-color: var(--base-clr);
+    margin: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+}
+
+#projects .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    h1{
+        font-size: 33px;
+        line-height: 1;
+    }
+    .heading{
+        font-size: 43px;
+    }
+
+    .lang{
+        font-weight: 700;
+    }
+}
+
+
+#projects .buttons button{
+    background-color: var(--base-varient-clr);
+    padding: 1em 2em;
+    margin: 1em 0;
+    border-radius: 50px;
+    transition: 100ms ease-in;
+    a{
+        text-decoration: none;
+    }
+
+    &:hover{
+        transform: scale(1.2);
+        background-color: var(--hover-clr);
+    }
+}
+
+
+#projects .image img{
+    max-width: 95%;
+    border-radius: 20px;
+    object-fit: contain;
+    margin: 0 0 0 2em;
+}
+
+
+.arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.arrow button{
+    background-color: var(--hover-clr);
+    padding: 1em;
+    border-radius: 10px;
+    transition: 200ms ease-in;
+}
+
+.arrow button:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 1024px){
+    #projects{
+        flex-direction: row-reverse;
+        height: 70vh;
+    }
+
+    #projects .content{
+        .heading{
+            font-size: 70px;
+        }
+    
+        .lang{
+            font-weight: 700;
+        }
+    }
+    
+    #projects .buttons button{
+        font-size: 18px;
+        padding: 1em 3em;
+    }
+}
