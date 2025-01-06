@@ -1,3 +1,8 @@
+:root{
+    --widget-clr: #393c47;
+}
+
+
 #cer{
     background-color: var(--base-clr);
     margin: min(6vw, 2em);
@@ -24,6 +29,10 @@
     &:hover{
         transform: scale(1.05);
     }
+}
+
+.darkmode .box{
+    background-color: var(--widget-clr);
 }
 
 

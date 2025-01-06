@@ -1,3 +1,7 @@
+:root{
+    --widget-clr: #393c47;
+}
+
 #first-block, #acad{
     background-color: var(--base-clr);
     margin: min(6vw, 2em);
@@ -53,6 +57,14 @@
         transform: scale(1.05);
     }
 }
+
+
+.darkmode #acad .details .college,
+.darkmode #acad .details .twelth, 
+.darkmode #acad .details .tenth{
+    background-color: var(--widget-clr);
+}
+
 
 
 #acad .details .title{
